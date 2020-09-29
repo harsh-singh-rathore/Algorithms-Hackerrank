@@ -12,7 +12,9 @@ int main() {
     for(int i=0; i<n; i++) {
         scanf("%d", &type);
 
-       if(type==1){
+
+        switch(type) {
+            case 1: {
                 scanf("%d", &x);
 
                 if(s.empty()) {
@@ -25,18 +27,22 @@ int main() {
                     maxS.push(temp);
                     s.push(x);
                 }
-        } 
-        else if(type==2) {
+                break;
+            }
+            case 2: {
                 s.pop();
                 maxS.pop();
+                break;
             }
-        else if(type==3){
-             if(!s.empty()){
-                cout<<maxS.top()<<endl;
+            case 3: {
+                if(!s.empty())
+                    cout<<maxS.top()<<endl;
+                break;
             }
+            default:
+            break;
         }
     }
 
     return 0;
 }
-
