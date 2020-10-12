@@ -19,3 +19,19 @@ int main() {
   cout<<sum;
   return 0;
 }
+#include<bits/stdc++.h>
+/* Question Details */
+
+using namespace std;
+
+int main()
+{
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+    #endif
+    int T; cin >> T; //Number of test cases
+    while(T--) {
+    }
+
+    return 0;
+}
